@@ -9,8 +9,3 @@ export interface nav_item_props {
   activeIndex: number;
   toggleId: any;
 }
-
-export interface pseudo_props {
-  id: string;
-  className?: any;
-}

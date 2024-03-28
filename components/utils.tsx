@@ -1,17 +1,4 @@
-export const pseudo_items = [
-  {
-    id: "before",
-  },
-  {
-    id: "after",
-  },
-  {
-    id: "before2",
-  },
-  {
-    id: "after2",
-  },
-];
+export const pseudo_items = ["before", "after", "before2", "after2"];
 
 export const handle_tag = (activeIndex: number, itemId: number) => {
   if (activeIndex === itemId) {
