@@ -6,5 +6,5 @@ export const routes: Route[] = [
   { id: 3, title: "Wallet" },
   { id: 4, title: "Reports" },
   { id: 5, title: "Statistics" },
-  { id: 6, title: "Dashboard" },
+  { id: 6, title: "Settings" },
 ];
