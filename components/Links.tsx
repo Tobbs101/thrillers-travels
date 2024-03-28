@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { navIcons } from "./utils";
 import { routes } from "@/routes";
 import { Route } from "@/interfaces";
 import Each from "./Each";
 import NavItem from "./NavItem";
 
-const SideNav = () => {
+const Links = () => {
   const [activeIndex, setActiveIndex] = useState(1);
 
   const toggleID = (linkId: number) => {
@@ -26,4 +25,4 @@ const SideNav = () => {
   );
 };
 
-export default SideNav;
+export default Links;

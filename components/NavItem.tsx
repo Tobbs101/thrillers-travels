@@ -8,7 +8,7 @@ const NavItem = ({ item, activeIndex, toggleID, index }: NavItemProps) => {
     <button
       id="nav-item"
       onClick={() => toggleID(item.id)}
-      className={`border relative w-full px-4 flex items-end justify-start gap-4 mb-4 ${
+      className={`border relative w-full px-4 flex items-end justify-start gap-3 mb-4 ${
         activeIndex === item.id
           ? "border-lightBlue bg-lightBlue"
           : "border-customBlue hover:opacity-80"
@@ -17,7 +17,12 @@ const NavItem = ({ item, activeIndex, toggleID, index }: NavItemProps) => {
       {activeIndex === item.id && (
         <div className="border border-lightBlue absolute w-[20px] h-full bg-lightBlue top-0 right-[-5px]"></div>
       )}
-      {activeIndex === item.id && <span id="before"></span>}
+      {activeIndex === item.id && (
+        <span
+          id="before"
+          className={activeIndex === 1 ? "bg-alternateBlue" : "bg-customBlue"}
+        ></span>
+      )}
       {activeIndex === item.id && <span id="after"></span>}
       {activeIndex === item.id && <span id="before2"></span>}
       {activeIndex === item.id && <span id="after2"></span>}
