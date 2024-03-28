@@ -28,8 +28,3 @@ export const handle_btn_style = (activeIndex: number, itemId: number) => {
 
   return "border relative w-full px-4 flex items-end justify-start gap-3 mb-4 border-customBlue hover:opacity-80 py-3 rounded-bl-3xl rounded-tl-3xl";
 };
-
-export const handle_pseudo_style = (activeIndex: number) => {
-  if (activeIndex === 1) return "bg-alternateBlue";
-  return "bg-customBlue";
-};

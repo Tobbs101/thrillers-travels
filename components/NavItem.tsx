@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  pseudo_items,
-  handle_tag,
-  handle_btn_style,
-  handle_pseudo_style,
-} from "./utils";
+import { pseudo_items, handle_tag, handle_btn_style } from "./utils";
 import { nav_item_props, pseudo_props } from "@/interfaces";
 import { Show } from "./Show";
 import Each from "./Each";
@@ -28,13 +23,10 @@ const NavItem = ({ item, activeIndex, toggleId }: nav_item_props) => {
           <Show key={index}>
             <Show.When isTrue={activeIndex === item.id}>
               <Show.When isTrue={activeIndex === 1}>
-                <span
-                  id={pseudo_item.id}
-                  className={handle_pseudo_style(activeIndex)}
-                ></span>
+                <span id={pseudo_item.id} className="bg-alternateBlue"></span>
               </Show.When>
               <Show.Else>
-                <span id={pseudo_item.id}></span>
+                <span className="bg-customBlue" id={pseudo_item.id}></span>
               </Show.Else>
             </Show.When>
           </Show>
