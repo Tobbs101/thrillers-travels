@@ -1,7 +1,15 @@
 import Image from "next/image";
+import Sidebar from "@/components/Sidebar";
+import PageLayout from "@/components/PageLayout";
+import Aside from "@/components/Aside";
 
 export default function Home() {
   return (
-    <main className="flex bg-lightBlue min-h-screen flex-col items-center justify-between p-24"></main>
+    <PageLayout>
+      <Sidebar />
+      <Aside>
+        <h2>Here</h2>
+      </Aside>
+    </PageLayout>
   );
 }
