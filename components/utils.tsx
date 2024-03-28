@@ -1,5 +1,11 @@
 export const pseudo_items = ["before", "after", "before2", "after2"];
 
+export const trip_options = [
+  { id: 1, label: "ONE WAY", value: "one-way" },
+  { id: 2, label: "ROUND TRIP", value: "round-trip" },
+  { id: 3, label: "MULTI CITY", value: "multi-city" },
+];
+
 export const handle_tag = (activeIndex: number, itemId: number) => {
   if (activeIndex === itemId) {
     return "uppercase text-sm mb-[4px] text-customBlue";
@@ -14,4 +20,18 @@ export const handle_btn_style = (activeIndex: number, itemId: number) => {
   }
 
   return "border relative w-full px-4 flex items-end justify-start gap-3 mb-4 border-customBlue hover:opacity-70 py-3 rounded-bl-3xl rounded-tl-3xl";
+};
+
+export const trip_option_btn = (selectedTrip: string, value: string) => {
+  if (selectedTrip === value) {
+    return "flex items-center justify-center gap-2 border border-alternateBlue bg-alternateBlue h-full rounded-full flex-1";
+  }
+  return "flex items-center justify-center gap-2 h-full rounded-full flex-1";
+};
+
+export const trip_option_p = (selectedTrip: string, value: string) => {
+  if (selectedTrip === value) {
+    return "text-[11px] font-semibold text-lightBlue";
+  }
+  return "text-[11px] font-semibold text-alternateBlue";
 };

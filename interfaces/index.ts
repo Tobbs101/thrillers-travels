@@ -9,3 +9,9 @@ export interface nav_item_props {
   activeIndex: number;
   toggleId: any;
 }
+
+export interface trip_option_props {
+  id: number;
+  label: string;
+  value: string;
+}
