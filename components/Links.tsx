@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { routes } from "@/routes";
 import { Route } from "@/interfaces";
 import Each from "./Each";
