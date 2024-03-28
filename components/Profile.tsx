@@ -4,7 +4,7 @@ import avatar from "../assets/avatar.png";
 
 const Profile = () => {
   return (
-    <div className="w-full bg-alternateBlue h-[300px] flex items-center justify-center gap-3 flex-col">
+    <div className="w-full bg-alternateBlue h-[300px] rounded-br-3xl rounded-tr-3xl flex items-center justify-center gap-3 flex-col">
       <Image src={avatar} alt="avatar" />
       <h1 className="text-white text-2xl font-medium">ALEX JOHNSON</h1>
       <p className="text-white text-sm">alex.johnson@gmail.com</p>
