@@ -5,43 +5,38 @@
 #before2,
 #after,
 #after2 {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Position relative to the #nav-item */
-  width: 30px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 20px;
 
   transform-origin: bottom right;
-  /* Rotate by 45 degrees */
 }
 
 #before {
-  top: -21px; /* Position at top right */
+  top: -21px;
   right: -3px;
   border-bottom-right-radius: 50%;
   background-color: #425c5a;
-  z-index: 100; /* Adjust color as needed */ /* Position at top right */
-  /* transform: rotate(45deg) skew(-20deg, -20deg); */
+  z-index: 100;
 }
 
 #after {
-  bottom: -21px; /* Position at bottom right */
+  bottom: -21px;
   right: -3px;
   background-color: #425c5a;
   border-top-right-radius: 50%;
-  z-index: 100; /* Adjust color as needed */ /* Position at bottom right */
-  /* transform: rotate(45deg) skew(-20deg, -20deg); */
+  z-index: 100;
 }
 
 #before2 {
-  top: -20.5px; /* Position at top right */
-  right: -3.5px;
-  background-color: #e1eceb; /* Adjust color as needed */ /* Position at top right */
-  /* transform: rotate(45deg) skew(-20deg, -20deg); */
+  top: -20px;
+  right: -4px;
+  background-color: #e1eceb;
 }
 
 #after2 {
-  bottom: -21px; /* Position at bottom right */
+  bottom: -20px;
   right: -4px;
-  background-color: #e1eceb; /* Adjust color as needed */ /* Position at bottom right */
-  /* transform: rotate(45deg) skew(-20deg, -20deg); */
+  background-color: #e1eceb;
 }
