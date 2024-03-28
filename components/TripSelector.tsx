@@ -53,6 +53,7 @@ const TripSelector = () => {
             render={(item: trip_option_props, index: number) => {
               return (
                 <button
+                  onClick={() => handleChoice(item.value)}
                   key={index}
                   className={trip_option_btn(selectedTrip, item.value)}
                 >

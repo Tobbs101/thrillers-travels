@@ -24,7 +24,7 @@ export const handle_btn_style = (activeIndex: number, itemId: number) => {
 
 export const trip_option_btn = (selectedTrip: string, value: string) => {
   if (selectedTrip === value) {
-    return "flex items-center justify-center gap-2 border border-alternateBlue bg-alternateBlue h-full rounded-full flex-1";
+    return "flex items-center justify-center gap-2 bg-alternateBlue h-full rounded-full flex-1";
   }
   return "flex items-center justify-center gap-2 h-full rounded-full flex-1";
 };
