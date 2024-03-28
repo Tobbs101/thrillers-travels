@@ -22,12 +22,7 @@ const NavItem = ({ item, activeIndex, toggleId }: nav_item_props) => {
         render={(pseudo_item: string, index: number) => (
           <Show key={index}>
             <Show.When isTrue={activeIndex === item.id}>
-              <Show.When isTrue={activeIndex === 1}>
-                <span id={pseudo_item} className="bg-alternateBlue"></span>
-              </Show.When>
-              <Show.Else>
-                <span className="bg-customBlue" id={pseudo_item}></span>
-              </Show.Else>
+              <span id={pseudo_item}></span>
             </Show.When>
           </Show>
         )}

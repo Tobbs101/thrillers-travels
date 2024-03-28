@@ -13,7 +13,11 @@ const Sidebar = () => {
         <h1 className="text-customBrown text-[13px] font-medium">
           ACTIVE USERS
         </h1>
-        <Image src={bg_footer} alt="background footer" />
+        <Image
+          src={bg_footer}
+          alt="background footer"
+          className="h-[150px] object-contain"
+        />
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ const Links = () => {
   };
 
   return (
-    <div className="w-full pl-5">
+    <div className="w-full pl-5 mt-5">
       <Each
         of={routes}
         render={(item: Route, index: number) => {

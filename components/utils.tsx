@@ -13,5 +13,5 @@ export const handle_btn_style = (activeIndex: number, itemId: number) => {
     return "border relative w-full px-4 flex items-end justify-start gap-3 mb-4 border-lightBlue bg-lightBlue py-3 rounded-bl-3xl rounded-tl-3xl";
   }
 
-  return "border relative w-full px-4 flex items-end justify-start gap-3 mb-4 border-customBlue hover:opacity-80 py-3 rounded-bl-3xl rounded-tl-3xl";
+  return "border relative w-full px-4 flex items-end justify-start gap-3 mb-4 border-customBlue hover:opacity-70 py-3 rounded-bl-3xl rounded-tl-3xl";
 };
