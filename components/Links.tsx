@@ -8,7 +8,7 @@ import NavItem from "./NavItem";
 const Links = () => {
   const [activeIndex, setActiveIndex] = useState(1);
 
-  const toggleID = (linkId: number) => {
+  const toggleId = (linkId: number) => {
     setActiveIndex(linkId);
   };
 
@@ -17,7 +17,7 @@ const Links = () => {
       <Each
         of={routes}
         render={(item: Route, index: number) => {
-          const props = { activeIndex, toggleID, index, item };
+          const props = { activeIndex, toggleId, index, item };
           return <NavItem {...props} />;
         }}
       />

@@ -17,5 +17,5 @@ export const Show = (props: any) => {
 
 Show.When = ({ isTrue, children }: { isTrue: any; children: any }) =>
   isTrue && children;
-Show.Else = ({ render, children }: { render: any; children: any }) =>
+Show.Else = ({ render, children }: { render?: any; children: any }) =>
   render || children;
