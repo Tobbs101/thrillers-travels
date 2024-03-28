@@ -3,7 +3,7 @@ export interface Route {
   title: string;
 }
 
-export interface NavItemProps {
+export interface nav_item_props {
   item: Route;
   activeIndex: number;
   toggleID: any;

@@ -1,9 +1,18 @@
 import React from "react";
-import { navIcons } from "./utils";
-import { NavItemProps } from "@/interfaces";
+import { nav_icons } from "./utils";
+import { nav_item_props } from "@/interfaces";
+import { Show } from "./Show";
 import "./item.css";
 
-const NavItem = ({ item, activeIndex, toggleID, index }: NavItemProps) => {
+const NavItem = ({ item, activeIndex, toggleID, index }: nav_item_props) => {
+  const handleTag = () => {
+    if (activeIndex === item.id) {
+      return "uppercase text-sm mb-[4px] text-customBlue";
+    }
+
+    return "uppercase text-sm mb-[4px] text-white";
+  };
+
   return (
     <button
       id="nav-item"
@@ -14,9 +23,11 @@ const NavItem = ({ item, activeIndex, toggleID, index }: NavItemProps) => {
           : "border-customBlue hover:opacity-80"
       } py-3 rounded-bl-3xl rounded-tl-3xl`}
     >
-      {activeIndex === item.id && (
-        <div className="border border-lightBlue absolute w-[20px] h-full bg-lightBlue top-0 right-[-5px]"></div>
-      )}
+      <Show>
+        <Show.When isTrue={activeIndex === item.id}>
+          <div className="border border-lightBlue absolute w-[20px] h-full bg-lightBlue top-0 right-[-5px]"></div>
+        </Show.When>
+      </Show>
       {activeIndex === item.id && (
         <span
           id="before"
@@ -26,14 +37,8 @@ const NavItem = ({ item, activeIndex, toggleID, index }: NavItemProps) => {
       {activeIndex === item.id && <span id="after"></span>}
       {activeIndex === item.id && <span id="before2"></span>}
       {activeIndex === item.id && <span id="after2"></span>}
-      <span>{navIcons[index]}</span>
-      <p
-        className={`uppercase text-sm mb-[4px] ${
-          activeIndex === item.id ? "text-customBlue" : "text-white"
-        }`}
-      >
-        {item.title}
-      </p>
+      {nav_icons[index]}
+      <p className={handleTag()}>{item.title}</p>
     </button>
   );
 };

@@ -1,4 +1,4 @@
-export const navIcons = [
+export const nav_icons = [
   <i className="bi-house text-customBrown text-lg"></i>,
   <i className="bi-airplane text-customBrown text-lg"></i>,
   <i className="bi-wallet text-customBrown text-lg"></i>,
