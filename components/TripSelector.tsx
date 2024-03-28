@@ -14,7 +14,7 @@ const TripSelector = () => {
   return (
     <div className="w-full bg-white rounded-full py-7 px-10">
       <div className="grid grid-cols-2 gap-5 mb-6">
-        <div className="border border-lightBlue bg-lightBlue p-3 rounded-full flex items-center justify-between">
+        <div className="border border-lightBlue bg-lightBlue py-3 px-5 rounded-full flex items-center justify-between">
           <span className="flex items-center justify-center gap-2">
             <i className="bi bi-geo-alt-fill text-alternateBlue"></i>
             <p className="text-[11px] font-semibold text-alternateBlue">
@@ -67,17 +67,14 @@ const TripSelector = () => {
         </div>
         <div className="grid grid-cols-2 gap-5">
           <span className="border border-lightBlue bg-lightBlue flex items-center justify-center gap-3 p-3 rounded-full">
-            <i className="bi bi-calendar3"></i>
+            <i className="bi bi-airplane-fill text-alternateBlue"></i>
             <p className="text-[11px] font-semibold text-alternateBlue">
-              29 JULY 2019
+              FIRST CLASS
             </p>
           </span>
-          <span className="border border-lightBlue bg-lightBlue flex items-center justify-center gap-3 p-3 rounded-full">
-            <i className="bi bi-person-fill"></i>
-            <p className="text-[11px] font-semibold text-alternateBlue">
-              2 TRAVELLER
-            </p>
-          </span>
+          <button className="text-[11px] font-semibold border border-customBrown bg-customBrown text-white flex items-center justify-center gap-3 p-3 rounded-full">
+            SEARCH
+          </button>
         </div>
       </div>
     </div>

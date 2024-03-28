@@ -3,6 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import PageLayout from "@/components/PageLayout";
 import Aside from "@/components/Aside";
 import TripSelector from "@/components/TripSelector";
+import Filter from "@/components/Filter";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Sidebar />
       <Aside>
         <TripSelector />
+        <Filter />
       </Aside>
     </PageLayout>
   );
