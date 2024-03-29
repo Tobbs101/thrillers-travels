@@ -1,9 +1,20 @@
+import emirates from "../assets/emirates.png";
+import lufthansa from "../assets/lufthansa.png";
+import qatar from "../assets/qatar.png";
+
 export const pseudo_items = ["before", "after", "before2", "after2"];
 
 export const trip_options = [
   { id: 1, label: "ONE WAY", value: "one-way" },
   { id: 2, label: "ROUND TRIP", value: "round-trip" },
   { id: 3, label: "MULTI CITY", value: "multi-city" },
+];
+
+export const trip_data = [
+  { id: 1, img: emirates, price: "$1,572", airline: "Emirates" },
+  { id: 2, img: qatar, price: "$2,072", airline: "Qatar" },
+  { id: 3, img: lufthansa, price: "$1,872", airline: "Lufthansa" },
+  { id: 4, img: emirates, price: "$1,872", airline: "Emirates" },
 ];
 
 export const handle_tag = (activeIndex: number, itemId: number) => {
@@ -34,4 +45,11 @@ export const trip_option_p = (selectedTrip: string, value: string) => {
     return "text-[11px] font-semibold text-lightBlue";
   }
   return "text-[11px] font-semibold text-alternateBlue";
+};
+
+export const trip_item_style = (trips_length: number, index: number) => {
+  if (trips_length === index)
+    return "p-3 h-[120px] flex items-center justify-between";
+
+  return "border-b border-dashed border-slate-300 p-3 h-[120px] flex items-center justify-between";
 };

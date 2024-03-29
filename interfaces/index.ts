@@ -15,3 +15,10 @@ export interface trip_option_props {
   label: string;
   value: string;
 }
+
+export interface trip_item {
+  id: number;
+  img: string;
+  price: string;
+  airline: string;
+}
