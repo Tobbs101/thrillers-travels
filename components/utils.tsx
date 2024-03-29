@@ -15,6 +15,12 @@ export const trip_options = [
   { id: 3, label: "MULTI CITY", value: "multi-city" },
 ];
 
+export const trip_routes = [
+  { id: 1, label: "NON STOP", value: "non-stop" },
+  { id: 2, label: "ONE STOP", value: "one-stop" },
+  { id: 3, label: "MORE STOP", value: "more-stop" },
+];
+
 export const trip_data = [
   { id: 1, img: emirates, price: "$1,572", airline: "Emirates" },
   { id: 2, img: qatar, price: "$2,072", airline: "Qatar" },
@@ -50,6 +56,13 @@ export const trip_option_p = (selectedTrip: string, value: string) => {
     return "text-[11px] font-semibold text-lightBlue";
   }
   return "text-[11px] font-semibold text-alternateBlue";
+};
+
+export const trip_route_btn = (selectedRoute: string, value: string) => {
+  if (selectedRoute === value) {
+    return "flex items-center justify-center gap-2 bg-customBrown py-2 rounded-full flex-1";
+  }
+  return "flex items-center justify-center gap-2 py-2 rounded-full flex-1";
 };
 
 export const trip_item_style = (trips_length: number, index: number) => {

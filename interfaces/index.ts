@@ -16,6 +16,12 @@ export interface trip_option_props {
   value: string;
 }
 
+export interface trip_route_props {
+  id: number;
+  label: string;
+  value: string;
+}
+
 export interface trip_item {
   id: number;
   img: string;
