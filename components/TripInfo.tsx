@@ -27,7 +27,7 @@ const TripInfo = () => {
           <p>BOM</p>
         </span>
       </div>
-      <div className="h-[280px] overflow-hidden">
+      <div className="h-[280px] overflow-hidden flex items-center justify-center">
         <Image src={tripview} alt={"Trip View"} className="" />
       </div>
       <div className="w-full bg-alternateBlue">
